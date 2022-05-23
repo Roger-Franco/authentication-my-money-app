@@ -20,7 +20,8 @@ class Auth extends Component {
     this.setState({ loginMode: !this.state.loginMode })
   }
   onSubmit(values) {
-    const { login, signup } = this.props this.state.loginMode ? login(values) : signup(values)
+    const { login, signup } = this.props
+    this.state.loginMode ? login(values) : signup(values)
   }
   render() {
     const { loginMode } = this.state
